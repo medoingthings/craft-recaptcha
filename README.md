@@ -37,6 +37,8 @@ If you’re using the CraftCMS [Contact Form](https://github.com/craftcms/contac
 To verify the reCAPTCHA is valid, pass the reCAPTCHA response from the `g-recaptcha-response` param to the `verify()` method on `CraftRecaptcha::$plugin->craftRecaptchaService`.
 
 ```php
+use mattwest\craftrecaptcha\CraftRecaptcha;
+
 // Get the reCAPTCHA response code to validate.
 $captcha = Craft::$app->getRequest()->getParam('g-recaptcha-response');
 
